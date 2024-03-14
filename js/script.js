@@ -1,15 +1,21 @@
-    document.getElementById("name").onclick = function () {
+   
+//    Name
+   
+   document.getElementById("name").onclick = function () {
     let fullName = "Waqar Ahmad"
     alert (fullName)
     let statement = "alert ('Waqar Ahmad')"
     document.getElementById("statement").innerHTML = statement;
 }
 
+// Number
     document.getElementById("number").onclick = function () {
     alert (1324567890)
     let statement = "alert (1234567890)"
     document.getElementById("statement").innerHTML = statement;
 }
+
+// Variables
 
 document.getElementById("variables").onclick = function () {
     let html = "<ul> <li>A variable name can't contain any spaces. </li> <li>A variable name can contain only letters, numbers, collar signs, and underscores.</li> <li>Though a variable name can't be any of JavaScript's keywords, it can contain keywords. For example, <code>userAlert</code> and <code>myVar</code> are legal.</li> <li>Capital letters are fine, but be careful. Variable names are case sensitive. A <code>rose</code> is not a <code>Rose</code>, if you assign the string Floribundas to the variable <code>rose</code>, and then ask JavaScript for the value assigned to <code>Rose</code>, you'll come up empty.</li>"
@@ -17,11 +23,15 @@ document.getElementById("variables").onclick = function () {
     document.getElementById("output").innerHTML = html;
 }
 
+// CamelCase
+
 document.getElementById("camelcase").onclick = function () {
     let html = "<h3>Examples</h3> <ul> <li><code>user</code></li> <li><code>userResponse</code></li> <li><code>userResponseTime</code></li> <li><code>userResponseTimeLimit</code></li> </ul>"
     document.getElementById("statement").innerHTML = "";
     document.getElementById("output").innerHTML = html;
 }
+
+// Sum
 
 document.getElementById("sum").onclick = function () {
     let num1 = 30;
@@ -34,6 +44,8 @@ document.getElementById("sum").onclick = function () {
 
     document.getElementById("statement").innerHTML = statement;
 }
+
+// Subtract
 
 document.getElementById("sub").onclick = function () {
     document.getElementById("statement").innerHTML = "";
@@ -50,6 +62,8 @@ document.getElementById("sub").onclick = function () {
     document.getElementById("statement").innerHTML = statement;
 }
 
+// Multiply
+
 document.getElementById("mul").onclick = function () {
     document.getElementById("statement").innerHTML = "";
     document.getElementById("output").innerHTML = "";
@@ -64,6 +78,8 @@ document.getElementById("mul").onclick = function () {
 
     document.getElementById("statement").innerHTML = statement;
 }
+
+// Divide
 
 document.getElementById("divide").onclick = function () {
     document.getElementById("statement").innerHTML = "";
@@ -80,6 +96,8 @@ document.getElementById("divide").onclick = function () {
     document.getElementById("statement").innerHTML = statement;
 }
 
+// Calculate
+
 document.getElementById("calculate").onclick = function () {
     
     document.getElementById("statement").innerHTML = "";
@@ -94,10 +112,14 @@ document.getElementById("calculate").onclick = function () {
     document.getElementById("statement").innerHTML = statement;
 }
 
-document.getElementById("clearStatementButton").onclick = function () {
-    document.getElementById("statemant").innerHTML = "";
+// Statement Clear
+
+document.getElementById("clearStatement").onclick = function(){
+    document.getElementById("statement").innerText = "";
 }
 
-document.getElementById("clearOutputButton").onclick = function () {
-    document.getElementById("output").innerHTML = "";
+// Output Clear
+
+document.getElementById("clearOutput").onclick = function(){
+    document.getElementById("output").innerText = "";
 }
